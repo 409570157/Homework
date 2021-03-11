@@ -1,12 +1,12 @@
 package com.yuni;
 
 public class Customer {
-    int customer;
+    String customer;
     int consumption;
     int discount;
     int total;
 
-    public Customer(int customer,int consumption,int discount,int total){
+    public Customer(String customer,int consumption,int discount,int total){
         this.customer = customer;
         this.consumption = consumption;
         this.discount = discount;
@@ -14,6 +14,12 @@ public class Customer {
     }
 
     public void print(){
-        System.out.println(customer +"\t"+consumption+"\t"+discount+"\t"+total);
+        if (discount < 100) {
+
+            System.out.println(customer + "\t" + consumption + "\t" +"\t"+ discount + "\t" + total);
+        }else{
+            System.out.println(customer + "\t" + consumption + "\t" + discount + "\t" + total);
+        }
+        }
     }
-}
+

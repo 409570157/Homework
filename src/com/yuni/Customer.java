@@ -16,7 +16,7 @@ public class Customer {
     public void print(){
         if (discount < 100) {
 
-            System.out.println(customer + "\t" + consumption + "\t" +"\t"+ discount + "\t" + total);
+            System.out.println(customer + "\t" + consumption + "\t"+"\t" +"  "+discount + "\t" + total);
         }else{
             System.out.println(customer + "\t" + consumption + "\t" + discount + "\t" + total);
         }
